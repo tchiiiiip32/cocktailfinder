@@ -12,9 +12,10 @@ use App\Http\Controllers\CocktailsController;
 |
 */
 
-
-//Route::get('Cocktail', [CocktailsController::class,'index']);
-Route::get('/', function()
-{
-    return view('acceuil');
-});
+Route::get('/', ['uses' => 'CocktailsController@index', 'as' => 'home']);
+//Route::get('/', 'CocktailsController@index');
+//Route::get('/Cocktail', [CocktailsController::class,'index']);
+//Route::get('/', function()
+//{
+//    return view('acceuil');
+//});
