@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CocktailsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +12,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('Cocktail', [CocktailsController::class,'index']);
