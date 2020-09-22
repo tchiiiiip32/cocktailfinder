@@ -10,3 +10,4 @@ class CocktailsController extends Controller
        return Cocktail::get();
     }
 }
+Route::get('Cocktail', [CocktailsController::class,'index']);

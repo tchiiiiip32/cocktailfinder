@@ -12,4 +12,9 @@ use App\Http\Controllers\CocktailsController;
 |
 */
 
-Route::get('Cocktail', [CocktailsController::class,'index']);
+
+//Route::get('Cocktail', [CocktailsController::class,'index']);
+Route::get('/', function()
+{
+    return view('acceuil');
+});
