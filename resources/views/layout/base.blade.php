@@ -1,30 +1,64 @@
+@section('menu')
 <html lang="{{ app()->getLocale() }}">
+<link rel="stylesheet" href="{{ elixir("css/all.css") }}">
     <body>
-    <div class="container">
-        @section('menu')
-            <div class="container-fluid">
-                <nav class="navbar navbar-inverse">
-                    <div class="container-fluid">
-                        <ul class="nav navbar-nav">
-                            <li><a id="len1" class="hoverable" href="#">ACCUEIL</a></li>
-                            <li><a id="len2" class="hoverable" href="#">COCKTAILS</a></li>
-                            <li><a id="len3" class="hoverable" href="#">LIEUX</a></li>
-                            <li><a id="len4" class="hoverable" href="#">A PROPOS</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <div id="what-the-hell-is-this">
-                    <div class="page-title">
-                        <h2>Simple Navigation</h2>
-                        <p class="lead">
-                            Based on Hover.css, the goal of this pen
-                            is to create a simple navigation bar <br />
-                            that can be easily reused in both mobile and native displays. Mouse over the nav text for animation!
-                        </p>
-                    </div>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="../public/img/logo.PNG">   </a>
                 </div>
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">COCKTAILS</a></li>
+                        <li><a href="#">LIEUX</a></li>
+                        <li><a href="#">A PROPOS</a></li>
+                        <li><a href="#">ESPACE MEMBRE</a></li>
+                    </ul>
+                </div>
+                <span class="navTrigger">
+                <i>bla</i>
+                <i>bl1</i>
+                <i>blo</i>
+            </span>
             </div>
-        @show
-    </div>
+        </nav>
+
+        <section class="home">
+        </section>
+        <div style="height: 1000px">
+            <!-- just to make scrolling effect possible -->
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+            </p>
+        </div>
+        <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            $('.navTrigger').click(function () {
+                $(this).toggleClass('active');
+                console.log("Clicked menu");
+                $("#mainListDiv").toggleClass("show_list");
+                $("#mainListDiv").fadeIn();
+
+            });
+        </script>
+
+        <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.nav').addClass('affix');
+                    console.log("OK");
+                } else {
+                    $('.nav').removeClass('affix');
+                }
+            });
+        </script>
     </body>
 </html>
+
+@show

@@ -19,9 +19,10 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "laravel-elixir": "^6.0.0-18"
   }
 }
