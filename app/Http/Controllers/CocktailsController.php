@@ -9,11 +9,11 @@ use App\Http\Requests;
 class CocktailsController extends Controller
 {
     public function index() {
-        return view('accueil', ['cocktail'=>Cocktail::get()]);
+        return view('cocktails', ['cocktail'=>Cocktail::get()]);
     }
 
-    public function show($n)
-    {
-        return view('accueil')->with('numero', $n);
-    }
+//    public function show($n)
+//    {
+//        return view('accueil')->with('numero', $n);
+//    }
 }
