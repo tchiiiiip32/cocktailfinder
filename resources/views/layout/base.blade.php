@@ -1,6 +1,7 @@
 @section('menu')
+{{--@section('style')<style src="{{ elixir("assets/css/app.css") }}></style>@endsection--}}
 <html lang="{{ app()->getLocale() }}">
-<link rel="stylesheet" href="{{ elixir("css/all.css") }}">
+<link rel="stylesheet" href="{{ elixir("assets/css/app.css") }}">
     <body>
         <nav class="nav">
             <div class="container">
