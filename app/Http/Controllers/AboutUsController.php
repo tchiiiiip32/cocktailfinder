@@ -3,11 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Bar;
 
-class BarsController extends Controller
+class AboutUsController extends Controller
 {
     public function index() {
-        return view('places', ['bar'=>Bar::get()]);
+        return view('aboutus');
     }
 }

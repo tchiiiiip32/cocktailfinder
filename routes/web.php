@@ -17,5 +17,7 @@ Route::get('/', function()
     return view('layout/base');
 });
 Route::get('/cocktails', ['uses' => 'CocktailsController@index']);
+Route::get('/places', ['uses' => 'BarsController@index']);
+Route::get('/aboutus', ['uses' => 'AboutUsController@index']);
 //Route::get('/', 'CocktailsController@index');
 //Route::get('/Cocktail', [CocktailsController::class,'index']);
