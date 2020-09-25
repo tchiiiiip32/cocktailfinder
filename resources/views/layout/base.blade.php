@@ -20,6 +20,7 @@
                 <i>bla</i>
                 <i>bl1</i>
                 <i>blo</i>
+                    <a href="#">S'INSCRIRE</a>
             </span>
             </div>
         </nav>
