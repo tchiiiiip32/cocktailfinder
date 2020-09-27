@@ -19,5 +19,7 @@ Route::get('/', function()
 Route::get('/cocktails', ['uses' => 'CocktailsController@index']);
 Route::get('/places', ['uses' => 'BarsController@index']);
 Route::get('/aboutus', ['uses' => 'AboutUsController@index']);
+Route::get('/login', 'UsersController@getUsers');
+Route::post('/login', 'UsersController@postUsers');
 //Route::get('/', 'CocktailsController@index');
 //Route::get('/Cocktail', [CocktailsController::class,'index']);
