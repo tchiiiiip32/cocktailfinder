@@ -11,5 +11,7 @@ npm-debug.log
 yarn-error.log
 .env
 app.php
+.env.example
 composer.json
+composer.lock
 database.php
