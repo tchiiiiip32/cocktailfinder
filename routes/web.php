@@ -21,5 +21,7 @@ Route::get('/places', ['uses' => 'BarsController@index']);
 Route::get('/aboutus', ['uses' => 'AboutUsController@index']);
 Route::get('/login', 'UsersController@getUsers');
 Route::post('/login', 'UsersController@postUsers');
+Route::get('/contact', 'ContactController@getForm');
+Route::post('/contact', 'ContactController@postForm');
 //Route::get('/', 'CocktailsController@index');
 //Route::get('/Cocktail', [CocktailsController::class,'index']);

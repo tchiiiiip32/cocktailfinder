@@ -39,18 +39,18 @@
     }
 </style>
 <body>
-<form class="loginform" method="POST" action="/login" accept-charset="UTF-8">
+<form class="loginform" method="POST" action="/contact" accept-charset="UTF-8">
     <h1>CONNEXION</h1>
     <input name="_token" type="hidden" value="pV1vWWdUqFDfYsBjKag43C3NvzbIC0lHtMnv9BpI">
     <div class="form-group {!! $errors->has('email') ? 'has-error' : '' !!}">
         <label for="email">Entrez votre email : </label>
         <input for="email" type="text" id="email">
     </div>
-    <div class="form-group {!! $errors->has('mdp') ? 'has-error' : '' !!}">
-        <label for="mdp">Mot de passe : </label>
-        <input for="mdp" type="mdp" id="mdp">
+    <div class="form-group {!! $errors->has('message') ? 'has-error' : '' !!}">
+        <label for="message">Message : </label>
+        <input for="message" type="text" id="message">
     </div>
-    <input style="margin-top: 20px" type="submit" value="CONNEXION">
+    <input style="margin-top: 20px" type="submit" value="ENVOYER">
 </form>
 </body>
 </html>

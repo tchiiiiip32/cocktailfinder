@@ -13,3 +13,4 @@ yarn-error.log
 app.php
 composer.json
 database.php
+mail.php

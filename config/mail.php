@@ -120,4 +120,6 @@ return [
         ],
     ],
 
+    'from' => ['address' => 'moi@free.fr', 'name' => 'Administrateur'],
+
 ];
