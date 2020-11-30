@@ -1,12 +1,13 @@
 @section('menu')
 {{--@section('style')<style src="{{ elixir("assets/css/app.css") }}></style>@endsection--}}
 <html lang="{{ app()->getLocale() }}">
-<link rel="stylesheet" href="{{ elixir("assets/css/app.css") }}">
-    <body>
+{{--<link rel="stylesheet" href="{{ elixir("assets/css/app.css") }}">--}}
+<link rel="stylesheet" href="../../../public/assets/css/app.css">
+    <body style="background-image: url(../public/img/acceuil.jpg); background-repeat: no-repeat; background-size: contain">
         <nav class="nav">
             <div class="container">
                 <div class="logo">
-                    <a href="#"><img src="../public/img/logo.PNG">   </a>
+                    <a href="#"><img src="../public/img/logo.png">   </a>
                 </div>
                 <div id="mainListDiv" class="main_list">
                     <ul class="navlinks">

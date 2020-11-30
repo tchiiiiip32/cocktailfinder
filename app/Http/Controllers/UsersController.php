@@ -20,13 +20,13 @@ class UsersController extends Controller
 
     // finir le MVC du contact
 
-    public function getContacts()
-    {
-        return view('contact', ['contact'=>User::get()]);
-    }
-
-    public function postContacts(Request $request)
-    {
-        return view('contact', ['contact'=>User::post()]);
-    }
+//    public function getContacts()
+//    {
+//        return view('contact', ['contact'=>User::get()]);
+//    }
+//
+//    public function postContacts(Request $request)
+//    {
+//        return view('contact', ['contact'=>User::post()]);
+//    }
 }

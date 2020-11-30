@@ -23,5 +23,6 @@ Route::get('/login', 'UsersController@getUsers');
 Route::post('/login', 'UsersController@postUsers');
 Route::get('/contact', 'ContactController@getForm');
 Route::post('/contact', 'ContactController@postForm');
+//Route::controller('/photo', 'PhotoController');
 //Route::get('/', 'CocktailsController@index');
 //Route::get('/Cocktail', [CocktailsController::class,'index']);
