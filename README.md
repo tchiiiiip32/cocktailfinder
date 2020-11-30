@@ -19,7 +19,7 @@ modifier le composer.json et supprimer la ligne : "laravelcollective/html": "5.1
 si le dossier vendor existe le supprimer
 executer la commande dans le terminal : composer require "laravelcollective/html":"^5.4.0"
 une fois installer lancer la commande : composer update
-une fois fini tout devrais fonctionné ! 
+une fois fini tout devrait fonctionner ! 
 
 4eme etape
 faire la commande php artisan key:generate et l'ajouter au .env
