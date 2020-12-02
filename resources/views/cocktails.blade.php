@@ -1,22 +1,93 @@
-@extends('layout.base')
-
-<html lang="{{ app()->getLocale() }}">
-    <body>
+@include('layout.header')
+<body class="bodyWithBackground">
     <div class="container">
-        @section('menu')
-        <h1 style="color: #1f648b;"> LES COCKTAILS</h1>
-        {{ $cocktail }}
-    </div>
-
-    {% for cocktail in cocktails %}
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{$titre}</h5>
-            <p class="card-text">{$text}.</p>
-            <a href="#" class="btn btn-primary">Détails</a>
+        <div class="row justify-content-center">
+            <h1>Cocktails</h1>
+        </div>
+        <div class="row justify-content-center" >
+            <div class="col-lg-3">
+                <button class="btn btn-primary bouton-image monBouton" type="submit">Filtrer</button>
+            </div>
+            <div class="col-lg-3">
+                <button class="btn btn-primary" type="submit">Nom</button>
+            </div>
+            <div class="col-lg-3">
+                <button class="btn btn-primary" type="submit">Alcool</button>
+            </div>
+            <div class="col-lg-3">
+                <button class="btn btn-primary" type="submit">Couleur</button>
+            </div>
         </div>
     </div>
-    {% endofor %}
-    </body>
-</html>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{URL::asset('/img/logo.png')}}" alt="profile Pic">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <img src="{{URL::asset('/img/heart.svg')}}" alt="profile Pic">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{URL::asset('/img/logo.png')}}" alt="profile Pic">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <img src="{{URL::asset('/img/heart.svg')}}" alt="profile Pic">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{URL::asset('/img/logo.png')}}" alt="profile Pic">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <img src="{{URL::asset('/img/heart.svg')}}" alt="profile Pic">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{URL::asset('/img/logo.png')}}" alt="profile Pic">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <img src="{{URL::asset('/img/heart.svg')}}" alt="profile Pic">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{URL::asset('/img/logo.png')}}" alt="profile Pic">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <img src="{{URL::asset('/img/heart.svg')}}" alt="profile Pic">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{URL::asset('/img/logo.png')}}" alt="profile Pic">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <img src="{{URL::asset('/img/heart.svg')}}" alt="profile Pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+@include('layout.footer')

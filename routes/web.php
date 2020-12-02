@@ -14,8 +14,9 @@ use App\Http\Controllers\CocktailsController;
 
 Route::get('/', function()
 {
-    return view('layout/base');
+    return view('home');
 });
+
 Route::get('/cocktails', ['uses' => 'CocktailsController@index']);
 Route::get('/places', ['uses' => 'BarsController@index']);
 Route::get('/aboutus', ['uses' => 'AboutUsController@index']);
